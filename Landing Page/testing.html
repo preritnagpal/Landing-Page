@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="con">
+        <!-- Container for the left section -->
+        <div class="Container">
+            <h2>Prerit Nagpal</h2>
+        </div>
+
+        <!-- Container for the right section -->
+        <div class="Containertwo">
+            <!-- Navigation bar -->
+            <nav class="nav">
+                <ul>
+                    <li><a class="nav-link active" data-content="home">Home</a></li>
+                    <li><a class="nav-link" data-content="service">Service</a></li>
+                    <li><a class="nav-link" data-content="about">About Us</a></li>
+                    <li><a href="https://preritnagpal.github.io/Portfolio/" class="cbtn">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Content for Home section -->
+            <div class="content" id="home-content">
+                <h3>Website <br> Development</h3>
+                <div class="para">
+                    <p>
+                        Website development involves creating and maintaining
+                        websites, encompassing tasks like designing layouts,
+                        writing code (HTML, CSS, JavaScript), and integrating functionality to ensure usability and performance.
+                    </p>
+                </div>
+                <button class="homebtn">Get Started</button>
+            </div>
+
+            <!-- Content for Service section -->
+            <div class="content" id="service-content">
+                <h3>Our Services</h3>
+                <div class="para">
+                    <p>
+                        We offer a diverse range of services encompassing web design, web development, 
+                        search engine optimization (SEO), digital marketing, e-commerce solutions, and more. 
+                        Whether you're launching a new website, optimizing for search engines, or enhancing user experience, 
+                        we are committed to providing the highest quality service and achieving exceptional results.
+                    </p>
+                </div>
+                <button class="servicebtn">Learn More</button>
+            </div>
+
+            <!-- Content for About Us section -->
+            <div class="content" id="about-content">
+                <h3>About Us</h3>
+                <div class="para">
+                    <p>
+                        I am a Frontend developer based in Bareilly, India. I am a Bachelor in Computer Applications undergraduate 
+                        from INVERTIS UNIVERSITY. I am very passionate about improving my coding skills & developing applications & websites. 
+                        I build WebApps and Websites. Working for myself to improve my skills. Love to build Full-Stack clones.
+                    </p>
+                </div>
+                <button class="aboutbtn">Read More</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for handling navigation clicks and content display
+        document.querySelectorAll('.nav ul li a.nav-link').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+
+                // Remove 'active' class from all links
+                document.querySelector('.nav ul li a.nav-link.active').classList.remove('active');
+
+                // Add 'active' class to the clicked link
+                this.classList.add('active');
+
+                // Hide all content divs
+                document.querySelectorAll('.content').forEach(content => {
+                    content.style.display = 'none';
+                });
+
+                // Show the target content div
+                const contentId = this.getAttribute('data-content') + '-content';
+                if (document.getElementById(contentId)) {
+                    document.getElementById(contentId).style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
