@@ -1,0 +1,187 @@
+/* Set background color and font for the entire body */
+body {
+    background-color: orange;
+    font-family: "Tilt", Arial, sans-serif;
+}
+
+/* Flex container for the main layout */
+.con {
+    display: flex;
+}
+
+/* Styles for the left container */
+.Container {
+    width: 32%;
+    height: 500px;
+    background-color: white;
+    justify-content: center;
+    margin-left: 20%;
+    margin-top: 8%;
+    border-radius: 35px;
+    background-image: url('land.png');
+    background-position: center left;
+    background-size: 96% auto;
+    background-repeat: no-repeat;
+    box-shadow: 30px 25px 10px -6px rgba(0, 0, 0, 0.5);
+}
+
+.Container h2 {
+    margin-left: 20%;
+    position: relative;
+    top: 40px;
+    font-weight: bold;
+}
+
+/* Styles for the right container */
+.Containertwo {
+    width: 32%;
+    height: 500px;
+    background-color: #1a1f71;
+    justify-content: center;
+    margin-left: -2.85%;
+    margin-top: 8%;
+    border-radius: 35px;
+    background-image: url('canva.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    box-shadow: 30px 25px 10px -6px rgba(0, 0, 0, 0.5);
+}
+
+/* Styles for the navigation bar inside the right container */
+.Containertwo nav {
+    margin-left: 0;
+    position: relative;
+    top: 60px;
+    font-weight: bold;
+}
+
+/* Navigation list styles */
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li {
+    margin: 0;
+}
+
+/* Navigation link styles */
+.nav ul li a {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* Active navigation link styles */
+.nav ul li a.active {
+    background-color: transparent;
+    color: white;
+}
+
+/* Hover effect for navigation links */
+.nav ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+/* Styles for the Contact button */
+.nav ul li a.cbtn {
+    background-color: orange;
+    color: black;
+    font-weight: 900;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav ul li a.cbtn:hover {
+    background-color: darkorange;
+    transform: scale(1.05);
+    text-decoration: none;
+    color: black;
+}
+
+.nav ul li a.cbtn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 165, 0, 0.6);
+}
+
+/* Styles for headings inside the right container */
+.Containertwo h3 {
+    margin-left: 4%;
+    position: relative;
+    top: 48px;
+    font-weight: bold;
+    font-size: 45px;
+    color: white;
+}
+
+/* Styles for paragraphs inside the right container */
+.Containertwo p {
+    max-width: 600px;
+    text-align: justify;
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: white;
+}
+
+/* Common styles for buttons inside the right container */
+.Containertwo .homebtn,
+.content .homebtn,
+.Containertwo .servicebtn,
+.content .servicebtn,
+.Containertwo .aboutbtn,
+.content .aboutbtn {
+    width: 32%;
+    height: 50px; /* Adjust the height here */
+    position: relative;
+    margin-top: 1.9%; /* Adjust the top margin for alignment */
+    left: 4%;
+    border-radius: 12px;
+    border: transparent;
+    background-color: orange;
+    color: black;
+    font-weight: 900;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Button hover effect */
+.Containertwo .homebtn:hover,
+.content .homebtn:hover,
+.Containertwo .servicebtn:hover,
+.content .servicebtn:hover,
+.Containertwo .aboutbtn:hover,
+.content .aboutbtn:hover {
+    background-color: darkorange;
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+/* Button focus effect */
+.Containertwo .homebtn:focus,
+.content .homebtn:focus,
+.Containertwo .servicebtn:focus,
+.content .servicebtn:focus,
+.Containertwo .aboutbtn:focus,
+.content .aboutbtn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 165, 0, 0.6);
+}
+
+/* Hide all content sections initially */
+.content {
+    display: none;
+}
+
+/* Display home content by default */
+#home-content {
+    display: block;
+}
