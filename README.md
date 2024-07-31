@@ -13,11 +13,12 @@ Table of Contents
 4. Contact
 
 
-Demo
+Demo:
 Check out the live demo of the project here.
+
 https://preritnagpal.github.io/Landing-Page/
 
-Features
+Features:
 1. Responsive design for various devices and screen sizes
 2. Modern and clean UI/UX
 3. Interactive elements using JavaScript
@@ -25,15 +26,17 @@ Features
 5. Beautiful typography and layout
 6. Engaging animations and transitions
 
-Technologies Used
+Technologies Used:
 1. HTML
 2. CSS
 3. JavaScript
 
 Contact
+
 If you have any questions or feedback, feel free to reach out to me:
 
 LinkedIn: Prerit Nagpal
+
 Email: preritnagpal1234@gmail.com
 
 Thank you for checking out my Landing Page project! I hope you find it useful and engaging.
