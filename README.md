@@ -1,4 +1,5 @@
 Landing Page Project
+
 Welcome to my Landing Page project! This project is part of my 100-project challenge and aims to create an engaging and visually appealing introduction to a website or product. The focus is on user experience and modern web design principles.
 
 Table of Contents
