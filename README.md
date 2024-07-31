@@ -35,7 +35,7 @@ Contact
 
 If you have any questions or feedback, feel free to reach out to me:
 
-LinkedIn: Prerit Nagpal
+LinkedIn: www.linkedin.com/in/preritnagpal
 
 Email: preritnagpal1234@gmail.com
 
